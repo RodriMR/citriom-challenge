@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
+import { NavBar } from "./components/NavBar/NavBar";
+import { Home } from "./Pages/Home/Home";
+import { Property_Details } from "./Pages/Property_Details/Property_Details";
+import { Property_Add_Admin } from "./Pages/Admin/Property_Add_Admin/Property_Add_Admin";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Route exact path="/">
+          <Redirect to="/properties" />
+        </Route>
+        <Route exact path="/properties">
+          <NavBar />
+          <Home />
+        </Route>
+        <Route exact path="/properties/:id">
+          <NavBar />
+          <Property_Details />
+        </Route>
+        <Route exact path="/add_property">
+          <NavBar />
+          <Property_Add_Admin />
+        </Route>
+      </Router>
+    </>
   );
 }
 

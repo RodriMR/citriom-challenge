@@ -1,0 +1,15 @@
+.property-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__img {
+    width: 25rem;
+  }
+}
