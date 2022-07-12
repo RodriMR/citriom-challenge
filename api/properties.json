@@ -1,0 +1,101 @@
+[
+  {
+    "name": "The Cottage",
+    "img": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+    "price": "223",
+    "rooms": "7",
+    "bathrooms": "2",
+    "country": "germany",
+    "address": "cardenales 4421"
+  },
+  {
+    "name": "The Bungalow",
+    "img": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": "343",
+    "rooms": "5",
+    "bathrooms": "4",
+    "country": "springfield",
+    "address": "avenida siempreviva 123"
+  },
+  {
+    "name": "The Coach House",
+    "img": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": "800",
+    "rooms": "10",
+    "bathrooms": "4",
+    "country": "italy",
+    "address": "santa fe 1223"
+  },
+  {
+    "name": "Orchard House",
+    "img": "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": "437",
+    "rooms": "2",
+    "bathrooms": "1",
+    "country": "switzerland",
+    "address": "main st 2234"
+  },
+  {
+    "name": "The Lodge",
+    "img": "https://images.unsplash.com/photo-1580216643062-cf460548a66a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
+    "price": "1321",
+    "rooms": "15",
+    "bathrooms": "7",
+    "country": "sweden",
+    "address": "maipu 3421"
+  },
+  {
+    "name": "The Hollies",
+    "img": "https://images.unsplash.com/photo-1628592102751-ba83b0314276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1697&q=80",
+    "price": "877",
+    "rooms": "5",
+    "bathrooms": "10",
+    "country": "croatia",
+    "address": "lorton 2311"
+  },
+  {
+    "name": "The Gables",
+    "img": "https://images.unsplash.com/photo-1580041065738-e72023775cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "price": "77",
+    "rooms": "1",
+    "bathrooms": "1",
+    "country": "belgium",
+    "address": "birchpond 891"
+  },
+  {
+    "name": "The Old Post Office",
+    "img": "https://images.unsplash.com/photo-1579632652768-6cb9dcf85912?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
+    "price": "223",
+    "rooms": "9",
+    "bathrooms": "3",
+    "country": "finland",
+    "address": "littleton 1232"
+  },
+  {
+    "name": "The Laurels",
+    "img": "https://images.unsplash.com/photo-1560440021-33f9b867899d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=659&q=80",
+    "price": "133",
+    "rooms": "5",
+    "bathrooms": "2",
+    "country": "norway",
+    "address": "bethpage 1171"
+  },
+  {
+    "name": "Orchard Cottage",
+    "img": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
+    "price": "223",
+    "rooms": "2",
+    "bathrooms": "1",
+    "country": "greece",
+    "address": "zeus st 901"
+  },
+  {
+    "name": "Treetops",
+    "img": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    "price": "2232",
+    "rooms": "7",
+    "bathrooms": "4",
+    "country": "springfield",
+    "address": "avenida siempreviva 1235"
+  }
+]
