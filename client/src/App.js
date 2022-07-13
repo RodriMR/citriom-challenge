@@ -8,6 +8,7 @@ import { Property_Add_Admin } from "./Pages/Admin/Property_Add_Admin/Property_Ad
 import { Property_Edit_Admin } from "./Pages/Admin/Property_Edit_Admin/Property_Edit_Admin";
 import { NavBar_Admin } from "./components/Admin/NavBar_Admin/NavBar_Admin";
 import { Home } from "./Pages/Home/Home";
+import { Login_Admin } from "./Pages/Admin/Login_Admin/Login_Admin";
 
 function App() {
   return (
@@ -18,8 +19,12 @@ function App() {
           <Redirect to="/admin/properties" />
         </Route>
         <Route exact path="/admin">
-          <Redirect to="/admin/properties" />
+          <Redirect to="/admin/login" />
         </Route>
+        <Route exact path="/admin/login">
+          <Login_Admin />
+        </Route>
+
         <Route exact path="/admin/properties">
           <NavBar_Admin />
           <Home_Admin />

@@ -1,4 +1,5 @@
 import {
+  ADMIN_SESSION,
   FETCH_PROPERTIES,
   FILTER_PROPERTIES,
   LOAD_COUNTRIES,
@@ -9,6 +10,8 @@ export const initialState = {
   properties: [],
   countries: [],
   filteredProperties: [],
+  adminSession: false,
+  adminId: "",
 };
 
 export function reducer(state = initialState, action) {
@@ -35,6 +38,13 @@ export function reducer(state = initialState, action) {
       return {
         ...state,
         countries: action.payload,
+      };
+    }
+    case ADMIN_SESSION: {
+      return {
+        ...state,
+        adminId: action.payload.data,
+        session: action.payload.session,
       };
     }
     default:

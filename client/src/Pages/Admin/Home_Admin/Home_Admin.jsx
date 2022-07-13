@@ -15,7 +15,9 @@ export const Home_Admin = () => {
   const [order, setOrder] = useState("ASC");
   const [atribute, setAtribute] = useState("");
   const [country, setCountry] = useState("");
-  console.log(state.properties);
+
+  let user = JSON.parse(localStorage.getItem("myUser"));
+  console.log(user, "SOY USER CHE");
   const handleFilter = () => {
     let filterProperties = [];
     if (country === "") {
@@ -47,6 +49,7 @@ export const Home_Admin = () => {
       }
       return 0;
     }
+
     let orderAllProperties = [];
     let orderFilteredProperties = [];
     if (atribute) {
