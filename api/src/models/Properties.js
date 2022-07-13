@@ -34,10 +34,20 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    created: {
+    bought: {
       //esto va a ser deleteado cuando de deployee la cuestion.
       type: DataTypes.BOOLEAN,
       defaultValue: false,
+    },
+    rented: {
+      //esto va a ser deleteado cuando de deployee la cuestion.
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
+    available: {
+      //esto va a ser deleteado cuando de deployee la cuestion.
+      type: DataTypes.BOOLEAN,
+      defaultValue: true,
     },
   });
 };

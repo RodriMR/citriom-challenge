@@ -11,14 +11,14 @@ router.get("/properties", async (req, res, next) => {
       if (property === null) {
         res.status(404).send({ error: "Property Not found" });
       } else {
-        res.status(200).json(property);
+        res.status(200).send(property);
       }
     } catch (err) {
       res.status(400).send({ error: err.message });
     }
   } else {
     try {
-      res.json(await Properties.findAll());
+      res.send(await Properties.findAll());
     } catch (err) {
       return res.status(400).send({ error: err.message });
     }
@@ -33,7 +33,7 @@ router.get("/properties/:id", async (req, res, next) => {
         id: id,
       },
     });
-    console.log("SOY PROPERTY", property);
+
     if (!property) {
       return res.status(404).send("Property Not Found");
     }
@@ -47,7 +47,7 @@ router.post("/properties/create", async (req, res, next) => {
   const { name, img, price, rooms, bathrooms, country, address } = req.body;
 
   try {
-    res.status(201).json({
+    res.status(201).send({
       msg: await models.addProperty(
         name,
         img,
@@ -59,7 +59,7 @@ router.post("/properties/create", async (req, res, next) => {
       ),
     });
   } catch (err) {
-    res.status(400).json({ error: err.message });
+    res.status(400).send({ error: err.message });
   }
 });
 router.put("/properties/update/:id", async (req, res, next) => {
@@ -81,9 +81,9 @@ router.put("/properties/update/:id", async (req, res, next) => {
         where: { id: id },
       }
     );
-    res.status(201).json("Property updated");
+    res.status(201).send("Property updated");
   } catch (err) {
-    res.status(400).json({ error: err.message });
+    res.status(400).send({ error: err.message });
   }
 });
 
@@ -94,6 +94,14 @@ router.delete("/delete/:id", async (req, res, next) => {
     res.status(200).send("Property deleted");
   } catch (err) {
     res.status(400).send(err);
+  }
+});
+router.post("/admin/login", async (req, res, next) => {
+  const { email, password } = req.body;
+  try {
+    res.status(200).send(await models.loginAdmin(email, password));
+  } catch (err) {
+    res.status(400).send({ error: err.message });
   }
 });
 

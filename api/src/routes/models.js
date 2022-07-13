@@ -75,4 +75,13 @@ module.exports = {
       return "Property created succesfully";
     }
   },
+
+  loginAdmin: async (email, password) => {
+    const token = { id: "090f36bf-1725-4624-b225-174a9d39499fasd-asds1233" };
+    if (email === "admin@admin.com" && password === "Admin123456") {
+      return token;
+    } else {
+      throw new Error("Incorrect credentials!");
+    }
+  },
 };

@@ -1,7 +1,14 @@
-import { FETCH_PROPERTIES } from "../actions/actionTypes";
+import {
+  FETCH_PROPERTIES,
+  FILTER_PROPERTIES,
+  LOAD_COUNTRIES,
+  ORDER_PROPERTIES,
+} from "../actions/actionTypes";
 
 export const initialState = {
   properties: [],
+  countries: [],
+  filteredProperties: [],
 };
 
 export function reducer(state = initialState, action) {
@@ -10,6 +17,24 @@ export function reducer(state = initialState, action) {
       return {
         ...state,
         properties: action.payload,
+      };
+    }
+    case ORDER_PROPERTIES: {
+      return {
+        ...state,
+        properties: action.payload,
+      };
+    }
+    case FILTER_PROPERTIES: {
+      return {
+        ...state,
+        filteredProperties: action.payload,
+      };
+    }
+    case LOAD_COUNTRIES: {
+      return {
+        ...state,
+        countries: action.payload,
       };
     }
     default:

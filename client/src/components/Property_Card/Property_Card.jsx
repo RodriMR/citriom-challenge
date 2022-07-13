@@ -33,12 +33,6 @@ export const Property_Card = ({
         <p className="property-card__country">Country: {country}</p>
         <p className="property-card__address"> Address: {address}</p>
       </Link>
-
-      <Link to={`/admin/edit/${id}`}>
-        <button>Edit </button>
-      </Link>
-
-      <button onClick={handleDelete}> Delete</button>
     </div>
   );
 };

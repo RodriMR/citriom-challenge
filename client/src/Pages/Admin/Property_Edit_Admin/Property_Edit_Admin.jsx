@@ -61,7 +61,6 @@ export const Property_Edit_Admin = () => {
   }, []);
   return (
     <div>
-      {console.log(property)}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
