@@ -5,6 +5,8 @@ import { NavBar } from "./components/NavBar/NavBar";
 import { Home } from "./Pages/Home/Home";
 import { Property_Details } from "./Pages/Property_Details/Property_Details";
 import { Property_Add_Admin } from "./Pages/Admin/Property_Add_Admin/Property_Add_Admin";
+import { Property_Edit_Admin } from "./Pages/Admin/Property_Edit_Admin/Property_Edit_Admin";
+
 function App() {
   return (
     <>
@@ -20,9 +22,13 @@ function App() {
           <NavBar />
           <Property_Details />
         </Route>
-        <Route exact path="/add_property">
+        <Route exact path="/admin/add_property">
           <NavBar />
           <Property_Add_Admin />
+        </Route>
+        <Route exact path="/admin/edit/:id">
+          <NavBar />
+          <Property_Edit_Admin />
         </Route>
       </Router>
     </>

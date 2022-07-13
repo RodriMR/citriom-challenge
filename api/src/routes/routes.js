@@ -62,6 +62,30 @@ router.post("/properties/create", async (req, res, next) => {
     res.status(400).json({ error: err.message });
   }
 });
+router.put("/properties/update/:id", async (req, res, next) => {
+  const { name, img, price, rooms, bathrooms, country, address } = req.body;
+  const { id } = req.params;
+
+  try {
+    await Properties.update(
+      {
+        name: name,
+        img: img,
+        price: price,
+        rooms: rooms,
+        bathrooms: bathrooms,
+        country: country,
+        address: address,
+      },
+      {
+        where: { id: id },
+      }
+    );
+    res.status(201).json("Property updated");
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
 
 router.delete("/delete/:id", async (req, res, next) => {
   const { id } = req.params;
