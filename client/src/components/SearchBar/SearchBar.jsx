@@ -25,16 +25,18 @@ export const SearchBar = () => {
     }
   };
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Search property"
-          value={input}
-          onChange={handleChange}
-        />
-        <button type="submit">Search</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className="form-search">
+      <input
+        className="form-search__input "
+        type="text"
+        value={input}
+        onChange={handleChange}
+        placeholder="Search properties..."
+      />
+
+      <button className=" btn btn--search" type="submit">
+        Search
+      </button>
+    </form>
   );
 };

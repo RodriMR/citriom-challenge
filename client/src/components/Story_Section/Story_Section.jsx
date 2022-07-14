@@ -3,7 +3,7 @@ import React from "react";
 export const Story_Section = () => {
   return (
     <>
-      <div className="story__pictures">
+      <div className="story__pictures" id="stories">
         <img
           src={require("../../img/story-1.jpeg")}
           alt="Couple with new house"

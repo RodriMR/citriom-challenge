@@ -16,10 +16,6 @@ function App() {
     <>
       {/* ADMIN ROUTES */}
       <Router>
-        <Route exact path="/">
-          {/* REDIRECT */}
-          <Redirect to="/properties" />
-        </Route>
         <Route exact path="/admin">
           <Redirect to="/admin/login" />
         </Route>
@@ -45,9 +41,13 @@ function App() {
         </Route>
       </Router>
       {/* USER ROUTES */}
-      <Router exact>
+      <Router>
+        <Route exact path="/">
+          {/* REDIRECT */}
+          <Redirect to="/properties" />
+        </Route>
         <Route exact path="/properties">
-          {/* <NavBar /> */}
+          <NavBar />
           <Home />
         </Route>
       </Router>

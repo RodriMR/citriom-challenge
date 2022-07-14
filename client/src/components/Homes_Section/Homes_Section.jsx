@@ -5,7 +5,7 @@ import { Property_Card } from "../Property_Card/Property_Card";
 export const Homes_Section = () => {
   const [state, dispatch] = useStore();
   return (
-    <section className="homes">
+    <section className="homes" id="homes">
       {state.filteredProperties.length ? (
         state.filteredProperties.map((property) => {
           return (

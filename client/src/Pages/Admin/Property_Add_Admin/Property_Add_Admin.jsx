@@ -54,66 +54,122 @@ export const Property_Add_Admin = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={input.name}
-          onChange={handleChange}
-          placeholder="Name"
-          name="name"
-        />
-        <label htmlFor="">Name</label>
-        <input
-          type="text"
-          value={input.img}
-          onChange={handleChange}
-          placeholder="Image"
-          name="img"
-        />
-        <label htmlFor="">Image</label>
-        <input
-          type="text"
-          value={input.price}
-          onChange={handleChange}
-          placeholder="Price"
-          name="price"
-        />
-        <label htmlFor="">Price</label>
-        <input
-          type="text"
-          value={input.rooms}
-          onChange={handleChange}
-          placeholder="Rooms"
-          name="rooms"
-        />
-        <label htmlFor="">Rooms</label>
-        <input
-          type="text"
-          value={input.bathrooms}
-          onChange={handleChange}
-          placeholder="Bathrooms"
-          name="bathrooms"
-        />
-        <label htmlFor="">Bathrooms</label>
-        <input
-          type="text"
-          value={input.country}
-          onChange={handleChange}
-          placeholder="Country"
-          name="country"
-        />
-        <label htmlFor="">Country</label>
-        <input
-          type="text"
-          value={input.address}
-          onChange={handleChange}
-          placeholder="Address"
-          name="address"
-        />
-        <label htmlFor="">Address</label>
-        <button type="submit">Add</button>
-      </form>
-    </div>
+    <section className="section-add">
+      <div className="add">
+        <div className="add__form">
+          <form className="form" onSubmit={handleSubmit}>
+            <div className="form__group">
+              <input
+                type="text"
+                value={input.name}
+                onChange={handleChange}
+                placeholder="Property name"
+                name="name"
+                id="name"
+                required
+                className="form__input"
+              />
+              <label className="form__label" htmlFor="name">
+                Property Name
+              </label>
+            </div>
+            <div className="form__group">
+              <input
+                type="text"
+                value={input.img}
+                onChange={handleChange}
+                placeholder="Image"
+                name="img"
+                id="img"
+                required
+                className="form__input"
+              />
+              <label htmlFor="img" className="form__label">
+                Image
+              </label>
+            </div>
+            <div className="form__group">
+              <input
+                type="number"
+                value={input.price}
+                onChange={handleChange}
+                placeholder="Price"
+                name="price"
+                required
+                className="form__input"
+                id="price"
+              />
+              <label htmlFor="id" className="form__label">
+                Price
+              </label>
+            </div>
+            <div className="form__group">
+              <input
+                type="number"
+                value={input.rooms}
+                onChange={handleChange}
+                placeholder="Rooms"
+                name="rooms"
+                required
+                className="form__input"
+                id="rooms"
+              />
+              <label htmlFor="rooms" className="form__label">
+                Rooms
+              </label>
+            </div>
+            <div className="form__group">
+              <input
+                type="number"
+                value={input.bathrooms}
+                onChange={handleChange}
+                placeholder="Bathrooms"
+                name="bathrooms"
+                required
+                className="form__input"
+                id="bathrooms"
+              />
+              <label htmlFor="bathrooms" className="form__label">
+                Bathrooms
+              </label>
+            </div>
+            <div className="form__group">
+              <input
+                type="text"
+                value={input.country}
+                onChange={handleChange}
+                placeholder="Country"
+                name="country"
+                required
+                className="form__input"
+                id="country"
+              />
+              <label htmlFor="country" className="form__label">
+                Country
+              </label>
+            </div>
+            <div className="form__group">
+              <input
+                type="text"
+                value={input.address}
+                onChange={handleChange}
+                placeholder="Address"
+                name="address"
+                required
+                className="form__input"
+                id="address"
+              />
+              <label htmlFor="address" className="form__label">
+                Address
+              </label>
+            </div>
+
+            <button className="btn" type="submit">
+              Add
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   );
 };

@@ -5,7 +5,7 @@
     "price": "22334",
     "rooms": "4",
     "bathrooms": "2",
-    "country": "germany",
+    "country": "Germany",
     "address": "Aecht Schlenkerla Rauchbier 4421"
   },
   {
@@ -14,7 +14,7 @@
     "price": "563721",
     "rooms": "12",
     "bathrooms": "5",
-    "country": "springfield",
+    "country": "Springfield",
     "address": "Siempreviva avenue 123"
   },
   {
@@ -23,7 +23,7 @@
     "price": "80000",
     "rooms": "6",
     "bathrooms": "2",
-    "country": "italy",
+    "country": "Italy",
     "address": "Pizza tower mozzarelli 342"
   },
   {
@@ -32,7 +32,7 @@
     "price": "43723",
     "rooms": "5",
     "bathrooms": "2",
-    "country": "switzerland",
+    "country": "Switzerland",
     "address": "Knäckebröd st 2234"
   },
   {
@@ -41,7 +41,7 @@
     "price": "33211",
     "rooms": "3",
     "bathrooms": "1",
-    "country": "sweden",
+    "country": "Sweden",
     "address": "Älplermagronen 3421"
   },
   {
@@ -50,7 +50,7 @@
     "price": "45236",
     "rooms": "4",
     "bathrooms": "2",
-    "country": "croatia",
+    "country": "Croatia",
     "address": "Pašta fažol 2313"
   },
   {
@@ -59,7 +59,7 @@
     "price": "77231",
     "rooms": "8",
     "bathrooms": "3",
-    "country": "belgium",
+    "country": "Belgium",
     "address": "Mosselen met friet 891"
   },
   {
@@ -68,7 +68,7 @@
     "price": "223",
     "rooms": "3",
     "bathrooms": "7",
-    "country": "finland",
+    "country": "Finland",
     "address": "Mustikkapiirakka 1232"
   },
   {
@@ -77,7 +77,7 @@
     "price": "53332",
     "rooms": "5",
     "bathrooms": "4",
-    "country": "norway",
+    "country": "Norway",
     "address": "Kjøttkaker Brunost 1171"
   },
   {
@@ -86,7 +86,7 @@
     "price": "22392",
     "rooms": "6",
     "bathrooms": "2",
-    "country": "greece",
+    "country": "Greece",
     "address": "Loukoumades Dolmades st 901"
   },
   {
@@ -95,7 +95,7 @@
     "price": "72232",
     "rooms": "5",
     "bathrooms": "2",
-    "country": "springfield",
+    "country": "Springfield",
     "address": "Siempreviva avenue 321"
   },
 

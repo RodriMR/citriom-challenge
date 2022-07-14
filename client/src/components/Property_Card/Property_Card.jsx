@@ -1,7 +1,6 @@
 import axios from "axios";
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
-import "./propertyCards.scss";
+import {useHistory } from "react-router-dom";
 export const Property_Card = ({
   name,
   img,

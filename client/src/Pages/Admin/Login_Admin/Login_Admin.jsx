@@ -34,27 +34,53 @@ export const Login_Admin = () => {
     }
   };
   return (
-    <div>
-      {console.log(user)}
-      <form onSubmit={handleLogin} autoComplete="off">
-        <input
-          type="text"
-          name="email"
-          value={user.email}
-          placeholder="Email"
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          value={user.password}
-          placeholder="Password"
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">LogIn</button>
-      </form>
-    </div>
+    <section className="section-login">
+      <div className="row">
+        <div className="login">
+          <div className="login__form">
+            <form className="form" onSubmit={handleLogin} autoComplete="off">
+              <div className="u-margin-bottom-medium">
+                <h2 className="heading-secondary">LOGIN</h2>
+              </div>
+              <div className="form__group">
+                <input
+                  type="text"
+                  name="email"
+                  value={user.email}
+                  placeholder="Email"
+                  onChange={handleChange}
+                  required
+                  id="email"
+                  className="form__input"
+                />
+                <label htmlFor="email" className="form__label">
+                  Email address
+                </label>
+              </div>
+              <div className="form__group">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  value={user.password}
+                  onChange={handleChange}
+                  required
+                  className="form__input"
+                  id="password"
+                />
+                <label htmlFor="password" className="form__label">
+                  Password
+                </label>
+              </div>
+              <div className="form__group">
+                <button className="btn" type="submit">
+                  LOGIN &rarr;
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };

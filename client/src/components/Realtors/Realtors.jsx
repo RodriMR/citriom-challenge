@@ -2,7 +2,7 @@ import React from "react";
 
 export const Realtors = () => {
   return (
-    <div className="realtors">
+    <div className="realtors" id="popular-realtors">
       <h3 className="heading-3">Top 3 Realtors</h3>
       <div className="realtors__list">
         <img

@@ -30,7 +30,7 @@ export const Features_Section = () => {
           {/* <use xlink:href="img/sprite.svg#icon-map-pin"></use> */}
         </svg>
         <h4 className="heading-4 heading-4--dark">
-          All homes in in top locations
+          All homes in top locations
         </h4>
         <p className="feature__text">
           Tenetur distinctio necessitatibus pariatur voluptatibus quidem

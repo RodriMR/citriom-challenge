@@ -1,12 +1,14 @@
 // COLOR VARIABLES
 $color-primary: #c69963;
 $color-primary-dark: #b28451;
-
+$color-primary-light: #d6ad7b;
 $color-secondary: #101d2c;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
-
+$color-grey-light-3: rgb(175, 175, 175);
+$color-white: #fff;
+$color-black: #000;
 $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
 
@@ -19,6 +21,15 @@ $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px;
 $bp-small: 37.5em; // 600px;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
 
 *,
 *::before,
@@ -49,10 +60,8 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns:
     [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
-    [center-start] repeat(
-      8,
-      [col-start] minmax(min-content, 14rem) [col-end]
-    ) [center-end] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr)
     [full-end];
 
   @media only screen and (max-width: $bp-large) {

@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { getAllProperties } from "../../../redux/actions/actions";
 import { useStore } from "../../../context/store.js";
-import "./home.scss";
 import { Property_Card_Admin } from "../../../components/Admin/Property_Card_Admin/Property_Card_Admin";
-import { Property_Card } from "../../../components/Property_Card/Property_Card";
+
 import {
-  FETCH_PROPERTIES,
   FILTER_PROPERTIES,
   ORDER_PROPERTIES,
 } from "../../../redux/actions/actionTypes";
+import { Header } from "../../../components/Header/Header";
+import { Realtors } from "../../../components/Realtors/Realtors";
+import { Features_Section } from "../../../components/Features_Section/Features_Section";
+import { Story_Section } from "../../../components/Story_Section/Story_Section";
+import { Filters_Section } from "../../../components/Filters_Section/Filters_Section";
+import { Gallery_Section } from "../../../components/Gallery_Section/Gallery_Section";
+import { Footer } from "../../../components/Footer/Footer";
 
 export const Home_Admin = () => {
   const [state, dispatch] = useStore();
@@ -80,53 +85,15 @@ export const Home_Admin = () => {
     handleOrder();
   }, [atribute, order]);
   return (
-    <div className="section-home">
-      <label htmlFor="">Filter By:</label>
-      <select
-        className="section-home__select"
-        value={atribute}
-        onChange={(e) => setAtribute(e.target.value)}
-      >
-        <option value="" disabled>
-          -
-        </option>
-        <option value="name">Name</option>
-        <option value="price">Price</option>
-        <option value="rooms">Rooms</option>
-        <option value="bathrooms">Bathrooms</option>
-      </select>
-      <select
-        className="select"
-        value={country}
-        onChange={(e) => setCountry(e.target.value)}
-      >
-        <option value="">All</option>
-        {state.countries?.map((country) => {
-          return (
-            <option key={country} value={country}>
-              {country}
-            </option>
-          );
-        })}
-      </select>
-      <select
-        className="section-home__select"
-        value={order}
-        onChange={(e) => setOrder(e.target.value)}
-      >
-        <option value="ASC">Asc</option>
-        <option value="DESC">Desc</option>
-      </select>
-      <button
-        onClick={() => {
-          getAllProperties(dispatch);
-          setAtribute("");
-          setCountry("");
-        }}
-      >
-        Reset
-      </button>
-      <div className="section-cards">
+    <div className="container">
+      <div className="sidebar"></div>
+      <Header />
+      <Realtors />
+      <Features_Section />
+      <Story_Section />
+      <Filters_Section />
+
+      <section className="homes">
         {state.filteredProperties.length ? (
           state.filteredProperties.map((property) => {
             return (
@@ -146,7 +113,9 @@ export const Home_Admin = () => {
         ) : (
           <p>Property not found</p>
         )}
-      </div>
+      </section>
+      <Gallery_Section />
+      <Footer />
     </div>
   );
 };
