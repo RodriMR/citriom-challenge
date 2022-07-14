@@ -23,16 +23,32 @@ export const Property_Card = ({
     }
   };
   return (
-    <div className="property-card">
-      <Link to={`/properties/${id}`}>
-        <p className="property-card__title">{name}</p>
-        <img src={`${img}`} alt={`${name}`} className="property-card__img" />
-        <p className="property-card__price">Total: {price} U$D</p>
-        <p className="property-card__rooms">Rooms: {rooms}</p>
-        <p className="property-card__bathrooms">Bathrooms: {bathrooms}</p>
-        <p className="property-card__country">Country: {country}</p>
-        <p className="property-card__address"> Address: {address}</p>
-      </Link>
+    <div className="home">
+      {/* <Link to={`/properties/${id}`}> */}
+      <img src={`${img}`} alt={`${name}`} className="home__img" />
+      <h5 className="home__name">{name}</h5>
+      <div className="home__location">
+        <p>
+          <span className="home__location--country">{country}</span>
+        </p>
+      </div>
+      <div className="home__rooms">
+        <p>Rooms: {rooms}</p>
+      </div>
+
+      <div className="home__area">
+        <p>Bathrooms: {bathrooms}</p>
+      </div>
+      <div className="home__price">
+        <p>U$D {price}</p>
+      </div>
+      <div className="home__address">
+        <p>
+          Address: <br /> {address}
+        </p>
+      </div>
+      <button className="btn home__btn">Contact realtor</button>
+      {/* </Link> */}
     </div>
   );
 };

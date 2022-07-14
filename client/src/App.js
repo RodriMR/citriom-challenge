@@ -1,4 +1,5 @@
 import "./App.css";
+import "./sass/main.scss";
 import React from "react";
 import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar/NavBar";
@@ -16,7 +17,8 @@ function App() {
       {/* ADMIN ROUTES */}
       <Router>
         <Route exact path="/">
-          <Redirect to="/admin/properties" />
+          {/* REDIRECT */}
+          <Redirect to="/properties" />
         </Route>
         <Route exact path="/admin">
           <Redirect to="/admin/login" />
@@ -45,7 +47,7 @@ function App() {
       {/* USER ROUTES */}
       <Router exact>
         <Route exact path="/properties">
-          <NavBar />
+          {/* <NavBar /> */}
           <Home />
         </Route>
       </Router>
